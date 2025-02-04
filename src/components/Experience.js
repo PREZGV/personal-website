@@ -6,28 +6,28 @@ const experiences = [
     role: "Software Engineer Intern",
     duration: "May 2024 - Present",
     description: "Collaborated in a team of 6 developers to enhance the company's website.",
-    logo: "/logos/hcss.png",
+    logo: `${process.env.PUBLIC_URL}/logos/hcss.png`,
   },
   {
     company: "Code Coogs Team Lead",
     role: "Frontend Developer",
     duration: "September 2023 - December 2023",
     description: "Designed and implemented UI components using React and Tailwind CSS.",
-    logo: "/logos/code-coogs.png",
+    logo: `${process.env.PUBLIC_URL}/logos/code-coogs.png`,
   },
   {
     company: "SASE Campus Outreach Intern",
     role: "Frontend Developer",
     duration: "December 2022 - June 2023",
     description: "Designed and implemented UI components using React and Tailwind CSS.",
-    logo: "/logos/sase.png",
+    logo: `${process.env.PUBLIC_URL}/logos/sase.png`,
   },
   {
     company: "Code Ninjas Summer Camp Instructor",
     role: "Instructor",
     duration: "Summer 2022",
     description: "Taught programming fundamentals to young students using Scratch and JavaScript.",
-    logo: "/logos/code-ninjas.png",
+    logo: `${process.env.PUBLIC_URL}/logos/code-ninjas.png`,
   },
 ];
 
