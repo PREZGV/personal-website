@@ -8,8 +8,8 @@ function About() {
       <div className="mt-6 flex flex-col md:flex-row items-center md:space-x-8">
         {/* Profile Image */}
         <img 
-          src="/profilepic.png" 
-          alt="Your Name" 
+          src={`${process.env.PUBLIC_URL}/profilepic.png`}
+          alt="George Varghese" 
           className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-lg object-cover"
         />
 
