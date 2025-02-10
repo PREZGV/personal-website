@@ -2,26 +2,28 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 function Home() {
-  const scrollToProjects = () => {
+  const scrollToExperience = () => {
     document.getElementById("experience").scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center text-center bg-gray-100">
-      <h1 className="text-5xl font-bold text-gray-800">
-        <Typewriter
-          words={["Hi, I'm George Varghese 👋"]}
-          loop={1} // Runs once
-          cursor
-          cursorStyle="|"
-          typeSpeed={60} // Adjust typing speed (lower is smoother)
-          deleteSpeed={30} // Speed of deleting
-        />
+    <div className="h-screen flex flex-col justify-center items-center text-center bg-gray-100 px-4">
+      <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+        <span className="inline-block">
+          <Typewriter
+            words={["Hi, I'm George Varghese 👋"]}
+            loop={1} // Runs once
+            cursor
+            cursorStyle="|"
+            typeSpeed={50} // Adjusted typing speed for smoothness
+            deleteSpeed={20} // Reduced delete speed for natural effect
+          />
+        </span>
       </h1>
-      <p className="text-lg text-gray-600 mt-4">Aspiring Software Engineer | Web Developer</p>
+      <p className="text-lg md:text-xl text-gray-600 mt-4">Aspiring Software Engineer | Web Developer</p>
       <button
-        onClick={scrollToProjects}
-        className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600"
+        onClick={scrollToExperience}
+        className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-transform transform hover:scale-105"
       >
         View My Work
       </button>
@@ -30,5 +32,6 @@ function Home() {
 }
 
 export default Home;
+
 
 

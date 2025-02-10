@@ -33,11 +33,11 @@ const experiences = [
 
 function Experience() {
   return (
-    <div id="experience" className="h-screen flex flex-col justify-center items-center text-center bg-gray-50">
+    <div id="experience" className="min-h-screen flex flex-col justify-center items-center text-center bg-gray-50 px-4">
       <h2 className="text-4xl font-bold text-gray-800">Experience</h2>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-20">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
         {experiences.map((exp, index) => (
-          <div key={index} className="bg-white shadow-lg p-6 rounded-lg flex items-center space-x-4 w-full md:w-96">
+          <div key={index} className="bg-white shadow-lg p-6 rounded-lg flex flex-col sm:flex-row items-center text-center sm:text-left space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-[450px]">
             <img src={exp.logo} alt={exp.company} className="w-16 h-16 object-contain" />
             <div className="text-left">
               <h3 className="text-2xl font-semibold text-gray-700">{exp.company}</h3>
