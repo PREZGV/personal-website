@@ -21,10 +21,20 @@ function Experience() {
 
   return (
     <div id="experience" className="min-h-screen flex flex-col justify-center items-center text-center bg-gray-50 px-4">
-      <h2 className="text-4xl font-bold text-gray-800 mb-8">Experience</h2>
+      <h2 className="text-4xl font-bold text-gray-800">Experience</h2>
       
+      {/* Instruction Text */}
+      <motion.p 
+        className="mt-2 text-gray-500 text-sm sm:text-base"
+        initial={{ opacity: 0, y: -5 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", repeat: Infinity, repeatType: "reverse" }}
+      >
+        Tap a tile to flip it!
+      </motion.p>
+
       {/* Responsive Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 w-full max-w-4xl">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 w-full max-w-4xl">
         {experiences.map((exp, index) => (
           <div key={index} className="perspective w-full">
             <motion.div
