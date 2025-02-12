@@ -34,7 +34,7 @@ function About() {
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          Hi! I'm <span className="font-semibold">George Varghese</span>, a passionate software engineer specializing in web development. 
+          Hi! I'm <span className="font-semibold text-green-600">George Varghese</span>, a passionate software engineer specializing in web development. 
           I love building modern, responsive, and efficient web applications using the latest technologies.
         </motion.p>
       </div>

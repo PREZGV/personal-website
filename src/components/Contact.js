@@ -4,7 +4,7 @@ import { motion } from "framer-motion"; // Import Framer Motion
 
 function Contact() {
   return (
-    <div id="contact" className="min-h-screen flex flex-col justify-center items-center text-center bg-gray-100 px-4">
+    <div id="contact" className="py-20 flex flex-col justify-center items-center text-center bg-gray-100 px-6">
       <motion.h2 
         className="text-4xl font-bold text-gray-800"
         initial={{ opacity: 0, y: -20 }}
@@ -16,7 +16,7 @@ function Contact() {
       </motion.h2>
       
       <motion.p 
-        className="mt-4 text-lg text-gray-600 max-w-md"
+        className="mt-4 text-lg text-gray-600 max-w-lg"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
@@ -26,13 +26,13 @@ function Contact() {
       </motion.p>
 
       {/* Social Icons */}
-      <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-6">
+      <div className="mt-6 flex gap-6">
         {/* Email */}
         <motion.a 
           href="mailto:georgev2403@gmail.com"
-          className="text-gray-700 hover:text-blue-500 text-3xl p-3 rounded-full transition-all duration-200"
+          className="text-gray-700 hover:text-green-500 text-3xl p-3 rounded-full transition-all duration-200"
           whileHover={{ y: -5 }}
-          animate={{ y: [0, -40, 0] }}
+          animate={{ y: [0, -8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
         >
           <FaEnvelope />
@@ -43,9 +43,9 @@ function Contact() {
           href="https://www.linkedin.com/in/georgev1" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-gray-700 hover:text-blue-500 text-3xl p-3 rounded-full transition-all duration-200"
+          className="text-gray-700 hover:text-green-500 text-3xl p-3 rounded-full transition-all duration-200"
           whileHover={{ y: -5 }}
-          animate={{ y: [0, -40, 0] }}
+          animate={{ y: [0, -8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 0.2 }}
         >
           <FaLinkedin />
@@ -56,9 +56,9 @@ function Contact() {
           href="https://github.com/PREZGV" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-gray-700 hover:text-blue-500 text-3xl p-3 rounded-full transition-all duration-200"
+          className="text-gray-700 hover:text-green-500 text-3xl p-3 rounded-full transition-all duration-200"
           whileHover={{ y: -5 }}
-          animate={{ y: [0, -40, 0] }}
+          animate={{ y: [0, -8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 0.4 }}
         >
           <FaGithub />

@@ -23,7 +23,7 @@ function Home() {
       <p className="text-lg md:text-xl text-gray-600 mt-4">Aspiring Software Engineer | Web Developer</p>
       <button
         onClick={scrollToExperience}
-        className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-transform transform hover:scale-105"
+        className="mt-6 px-6 py-3 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 transition-transform transform hover:scale-105"
       >
         View My Work
       </button>
