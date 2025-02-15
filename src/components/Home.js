@@ -11,7 +11,7 @@ function Home() {
       <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
         <span className="inline-block">
           <Typewriter
-            words={["Hi, I'm Omer Lambay 👋"]}
+            words={["Hi, I'm George Varghese 👋"]}
             loop={1} // Runs once
             cursor
             cursorStyle="|"
